@@ -1,10 +1,16 @@
-arquivo = open('Corona_genomic.fasta', 'r')
-linhas = arquivo.readlines()
+genomas = open('Corona_genomic.fasta','r')
+aux = []
+conteudo = genomas.readlines()
 
-linhas_importantes = []
+genomas.close()
 
-for linha in linhas:
-    if linha.find('>') != 0: # vai ignorar as linhas que não são importantes
-        linhas_importantes.append(linha)
+for i in conteudo:
+     if i.find('>') != 0: # vai ignorar as linhas que não são importantes
+       aux.append(i)
 
-print(linhas_importantes)
+muda = ''
+
+for i in aux:
+    muda += i.replace('\n', '')
+
+print(muda)

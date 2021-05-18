@@ -4,9 +4,9 @@ conteudo = genomas.readlines()
 
 genomas.close()
 
-for linha in conteudo:
-     if linha.find('>') != 0: # vai ignorar as linhas que não são importantes
-       aux.append(linha)
+for i in conteudo:
+     if i.find('>') != 0: # vai ignorar as linhas que não são importantes
+       aux.append(i)
 
 muda = ''
 
