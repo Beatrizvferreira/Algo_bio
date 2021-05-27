@@ -5,6 +5,12 @@ def maxnum(*numeros):
       maior = i
   return maior
 
+numeros = input('Digite os números separados por espaço:\n')
+conjunto = []
 
-lista = {9,2,4,1,6,2,5}
-print(f'O maior elemento é {maxnum(*lista)}')
+for i in numeros.split():
+  conjunto.append(int(i))
+
+print(conjunto)
+
+print(f'O maior elemento é {maxnum(*conjunto)}')
