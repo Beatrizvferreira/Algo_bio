@@ -85,13 +85,9 @@ print(f'{aux}\n')
 #f) Calcule o produto entre os elementos de cada coluna
 print('O produto entre os elementos de cada coluna é:')
 aux.clear()
-for i in range(4):
+for j in range(5):
     produto =1
-    for j in range(5):
+    for i in range(4):
         produto *= matrix[i][j]
     aux.append(produto)
 print(f'{aux}\n')
-
-
-
-

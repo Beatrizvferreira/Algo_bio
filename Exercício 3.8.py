@@ -1,8 +1,10 @@
 import numpy as np
 from matplotlib import pyplot as plt
+import math
 
 import math
-x= np.linspace(-2*math.pi,2*math.pi,150) #vetor com 150 pontos linearmente espaçados entre -2pi e 2pi.
+
+x= np.arange(-2*math.pi,2*math.pi,4*math.pi/150) #vetor com 150 pontos linearmente espaçados entre -2pi e 2pi.
 
 fig = plt.figure(figsize=(10, 10))
 
@@ -21,7 +23,6 @@ plt.title('função cos(x)')
 #gráfico tangente
 y3=np.tan(x)
 ax2 = fig.add_subplot(2,2,3)
-plt.axis([-7, 7, -42, 42])
 ax2.plot(x,y3,'bo')
 plt.ylabel('valor de tg(x)')
 plt.xlabel('valor de x')

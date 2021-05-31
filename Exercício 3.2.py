@@ -9,7 +9,7 @@ numeros = input('Digite os números separados por espaço:\n')
 conjunto = []
 
 for i in numeros.split():
-  conjunto.append(int(i))
+  conjunto.append(float(i))
 
 print(conjunto)
 

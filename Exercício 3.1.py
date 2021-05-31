@@ -3,11 +3,11 @@ def fatorial(n):
         return 1
     else:
         m=1
-        for i in range(n,1,-2):
-            m *= i*(i-1)
+        for i in range(n,1,-1):
+            m *= i
         return m
 
 
-num=int(input('Digite um número:'))
+num=int(input('Digite um número NATURAL:'))
 k = fatorial(num)
 print(f'O fatorial de {num} é {k}.')

@@ -33,7 +33,7 @@ for i in pessoas:
 
 print(f'O peso médio das pessoas é {soma_peso/num:.2f}kg')
 print(f'A altura média das pessoas é {soma_altura/num:.2f}m')
-print(f'O ICM médio das pessoas é {soma_imc/num:.2f}kg/m^2')
+print(f'O ICM médio das pessoas é {soma_imc/num:.2f}kg/m²')
 
 
 

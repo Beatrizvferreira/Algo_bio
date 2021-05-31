@@ -1,20 +1,13 @@
+import numpy as np
+
 lista = []
 aux = []
 
-print('Digite o conjunto de números, separado-os por espaço:')
-lista.append(input().split(' ')) #vetor
+n= int(input('Digite a quantidade de números que deseja na sua lista:'))
 
-
-for i in lista: #transformar os elementos do vetor em inteiros
-    for j in i:
-        print(j)
-        aux.append(int(j))
-
-lista.clear() 
-
-for i in range(len(aux)): #pegando os elementos que estão nos índices pares
-    if i%2 == 0:
-        lista.append(aux[i])
-
+lista = np.random.randint(-n,n,size=n) #vetor
 print(lista)
 
+for keys in range(n): #pegando os elementos que estão nos índices pares
+    if keys%2 == 0:
+        aux.append(lista[keys])
